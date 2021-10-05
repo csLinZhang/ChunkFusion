@@ -1,0 +1,129 @@
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>ChunkFusion</title>
+
+<style>
+<!--
+div.Section1
+	{page:Section1;}
+ table.MsoNormalTable
+	{mso-style-parent:"";
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif"}
+table.TableGrid
+	{border:1.0pt solid black;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	}
+-->
+</style>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>OECS</title>
+
+<style>
+<!--
+div.Section1
+	{page:Section1;}
+ table.MsoNormalTable
+	{mso-style-parent:"";
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif"}
+table.TableGrid
+	{border:1.0pt solid black;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	}
+-->
+</style>
+</head>
+
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<body>
+
+<table class="MsoNormalTable" border="0" cellpadding="0" width="1217" id="table3" height="35">
+	<tr>
+		<td valign="top" style="width: 1211px; height: 31px; padding: .75pt" align="left">
+		<p class="text">
+		<span lang="en-us"><font face="Calibri" size="5" color="#0000FF">
+		<b>ChunkFusion: A learning-based 3D RGB-D Reconstruction Framework via Chunk-based Integration</b></font></span><p class="text">
+		<span lang="en-us"><font face="Calibri" size="4" color="#0000FF">
+		Chaozheng Guo<sup>1</sup>,&nbsp;Lin Zhang</font></span><font face="Calibri" size="4" color="#0000FF"><sup>1</sup><span lang="en-us">, 
+		Ying Shen</span><sup>1</sup><span lang="en-us">,
+		Yicong Zhou</span><sup>2</sup></font>
+		
+		<p class="text">
+		<span lang="en-us"><font face="Calibri" size="4" color="#0000FF">
+		<sup>1</sup>
+		School of Software Engineering, Tongji University, Shanghai, China</font></span>
+
+		<p class="text">
+		<span lang="en-us"><font face="Calibri" size="4" color="#0000FF">
+		<sup>2</sup>
+		Department of Computer and Information Science, University of Macau, Macau</font></span>
+
+	</font></td>
+	</tr>
+	</table>
+<hr>
+
+<p><span lang="en-us"><b><font face="Calibri" size="5">Introduction</font></b></span></p>
+<p><span style="font-size: 13pt; font-family: Calibri; color: windowtext" lang="EN-US">
+	This is the website for our paper &quot;<a href="chunkFusion_1004.pdf">ChunkFusion: A learning-based 3D RGB-D Reconstruction Framework via Chunk-based Integration
+	<span style="color: #000000"></span></a>&quot;
+</span></p>
+
+<p><span style="font-size: 13pt; font-family: Calibri; color: windowtext" lang="EN-US">
+	Recent years have witnessed a growing interest in online RGB-D 3D reconstruction. On the premise of ensuring the reconstruction accuracy with noisy depth scans, making the system scalable to various environments is still challenging. In this a paper, we devote our efforts to try to fill in this research gap by proposing a scalable and robust RGB-D reconstruction framework, namely ChunkFusion. In ChunkFusion, sparse voxel management is exploited to improve the scalability of online reconstruction. Besides, a chunk-based fusion network is designed to perform a robust integration of the noisy depth measurements on the sparsely allocated voxel chunks. The proposed chunk-based TSDF (truncated signed distance function) integration scheme can accurately restore surfaces with superior visual consistency from noisy depth maps and can guarantee the scalability of online reconstruction simultaneously, making our reconstruction framework widely applicable to scenes with various scales and depth scans with strong noises and outliers. The outstanding scalability and efficacy of our ChunkFusion have been corroborated by extensive experiments.	
+</span></p>
+
+<img src="images/overview.png" height="200" >
+
+<hr>
+<p><span lang="en-us"><b><font face="Calibri" size="5">Reconstruction Result</font></b></span></p>
+
+<p><span style="font-size: 13pt; font-family: Calibri; color: windowtext" lang="EN-US">
+	Reconstruction result on <a href="https://www.doc.ic.ac.uk/~ahanda/VaFRIC/iclnuim.html">ICL-NUIM</a> dataset:
+</span></p>
+<img src="images/icl.png" height="300">
+
+<p><span style="font-size: 13pt; font-family: Calibri; color: windowtext" lang="EN-US">
+	Reconstruction result on self-collected real-world data:
+</span></p>
+<img src="images/fullSeq.png" height="200">
+<br>
+<img src="images/fullSeq_2.png" height="200">
+
+
+<hr>
+<p><span lang="en-us"><b><font face="Calibri" size="5"> Source Codes </font></b></span></p>
+<p>
+<span lang="en-us"><font face="Calibri" style="font-size: 13pt"> 
+<a href="https://github.com/Goochaozheng/ChunkFusion">Get the code</a></font></span></p>
+
+<p>
+<span lang="en-us"><font face="Calibri" style="font-size: 13pt">
+	Use git to clone the repository:
+</a></font></span></p>
+
+<p>
+<span lang="en-us"><font face="Calibri" color="#0000FF" style="font-size: 13pt">
+	&nbsp &nbsp git clone https://github.com/Goochaozheng/ChunkFusion.git
+</a></font></span></p>
+
+
+<p>
+<span lang="en-us"><font face="Calibri" style="font-size: 13pt">
+	Follow the <a href="https://github.com/Goochaozheng/ChunkFusion.git">guide</a> to run the demo.
+</font></span></p>
+
+<hr>
+<p align="justify">
+	<font face="Calibri">Last update: Oct. 4, 2021
+</p>
+
+
+</body>
+</html>
